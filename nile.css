@@ -1,0 +1,27 @@
+.nile-page { --dark-green: #1d514b; }
+.nile-hero .hero-image { object-position: center 55%; }
+.nile-hero .hero-shade { background: linear-gradient(90deg, rgba(11,35,35,.76), rgba(11,35,35,.35) 48%, rgba(11,35,35,.04)), linear-gradient(0deg, rgba(11,35,35,.24), transparent 32%); }
+.nile-page .intro { padding-bottom: 92px; }
+.river-story { min-height: 520px; display: grid; grid-template-columns: 1.1fr .9fr; background: #e9eee8; }
+.river-photo { min-height: 520px; position: relative; overflow: hidden; background: #668c82; }
+.river-photo img { width: 100%; height: 100%; min-height: 520px; object-fit: cover; }
+.river-photo span { position: absolute; left: 25px; bottom: 22px; color: white; font-size: 10px; letter-spacing: .15em; text-transform: uppercase; text-shadow: 0 1px 8px #122a27; }
+.river-copy { max-width: 500px; padding: 75px clamp(30px, 7vw, 100px); align-self: center; }
+.river-copy h2 { margin-bottom: 20px; font-size: clamp(38px, 4.5vw, 58px); }
+.river-copy > p:not(.eyebrow) { margin-bottom: 27px; color: #596a64; font-size: 14px; }
+.river-facts { padding-top: 100px; padding-bottom: 106px; }
+.river-facts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.river-facts-grid article { padding-top: 21px; border-top: 1px solid #d7d6ca; }
+.fact-number { color: #a67c3f; font-size: 10px; font-weight: 700; letter-spacing: .16em; }
+.river-facts-grid h3 { margin: 15px 0 12px; font-size: 31px; }
+.river-facts-grid p { max-width: 315px; margin: 0; color: var(--muted); font-size: 13px; }
+.page-cta { padding: 82px 24px 88px; text-align: center; background: var(--dark-green); color: white; }
+.page-cta .eyebrow { color: #f1d39e; }
+.page-cta h2 { margin: 0 auto 26px; font-size: clamp(36px, 5vw, 56px); }
+@media (max-width: 700px) {
+  .river-story { grid-template-columns: 1fr; }
+  .river-photo, .river-photo img { min-height: 330px; height: 330px; }
+  .river-copy { padding: 55px 26px 62px; }
+  .river-facts { padding-top: 72px; padding-bottom: 76px; }
+  .river-facts-grid { grid-template-columns: 1fr; gap: 28px; }
+}
